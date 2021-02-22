@@ -1,0 +1,14 @@
+﻿@page
+@model Mvvmweb.Pages.Forms.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+<form method="post">
+    <div asp-validation-summary="All" style="color:red"></div>
+    <input asp-for="Person.Name" placeholder="Name" />
+    <input asp-for="Person.Address" placeholder="Address" />
+    <input asp-for="Person.Age" placeholder="Age" />
+    <button type="submit">Submit</button>
+</form>
+
+
